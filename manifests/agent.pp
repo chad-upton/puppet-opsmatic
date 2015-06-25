@@ -179,7 +179,11 @@ class opsmatic::agent (
         }
         'RedHat', 'CentOS','Amazon': {
           case $::operatingsystemmajrelease {
+<<<<<<< HEAD
             '6','2014','2015': {
+=======
+            '6','2015': {
+>>>>>>> bccd18e95f6fd4b9b5c269c9b51fd44425d52491
               service { 'opsmatic-agent':
                 ensure     => 'running',
                 hasrestart => true,
